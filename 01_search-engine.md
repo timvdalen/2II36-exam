@@ -3,6 +3,7 @@
 ### 1. Describe the basic SE architecture, including both indexing and querying. (handouts + any other source you find useful)
 
 Indexing: ![indexing](http://img.ctrlv.in/img/15/01/17/54ba70cb85d33.png)
+
 Querying: ![querying](http://img.ctrlv.in/img/15/01/17/54ba7117671ed.png)
 
 ### 2. Describe the basic crawler architecture and indicate what kind of challenges need to be addressed. (handouts + more details http://nlp.stanford.edu/IR-book/pdf/20crawl.pdf).
