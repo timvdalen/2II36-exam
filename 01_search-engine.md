@@ -41,10 +41,12 @@ These are pretty obvious...
 
 ### 6. Provide your categorization of different kinds of search engines (define dimensions along which different types can be compared).
 Different search engines are:
+
 * Meta-Search
 * Personalized Search
 * Document Search
 * General Search
+
 TODO : dimension. Is asked on the forum.
 
 ### 7. Provide your categorization of different kinds of web crawlers (define dimensions along which different types can be compared). 
@@ -54,6 +56,7 @@ TODO : dimension. Is asked on the forum.
 * Web archival & Web mirroring
 * Web characterisation 
 * Web site analysis
+
 TODO : dimension. Is asked on the forum.
 
 ### 8. Describe the Mercator scheme for implementing web crawlers. Why is it designed this way?
@@ -61,32 +64,35 @@ TODO : dimension. Is asked on the forum.
 ![](http://img.ctrlv.in/img/15/01/17/54ba736065b93.png)
 
 It is designed this way to find a balance between politeness and freshness. 
+
 - Front queues manage prioritization
 - Back queues enforce politeness
 
 ### 9. Describe meta-crawling/meta search engines (the main motivation, necessity, feasibility, key challenges, risks etc.)
 The idea behind meta-crawling/meta-search is to combine the results from other search engines to your own search engine.
+
 * Motivation: If you have a lot of results, you can select the best results. 
 * Key challenges are:
-- Efficiency. You have to combine the results in real time.
-Near-duplicate removal. You have to remove results that look a lot like each other.
-Ranking. How to rank and combine the results.
--  Risks:
-Search engines will notice that you use their search engine. 
-They will want money for these queries. 
-Also you do not have much control about the results you give. 
-Other search engines can give bad results and then you cannot give good results.
-* Feasibility
-There is a lot of potential in meta search. 
-Especially in meta searches for a pre-defined area. 
-Then it is easier to rank the results 
-* Necessity 
-They are not necessity. 
+	- Efficiency. You have to combine the results in real time.
+	Near-duplicate removal. You have to remove results that look a lot like each other.
+	Ranking. How to rank and combine the results.
+	-  Risks:
+	Search engines will notice that you use their search engine. 
+	They will want money for these queries. 
+	Also you do not have much control about the results you give. 
+	Other search engines can give bad results and then you cannot give good results.
+* Feasibility:
+	There is a lot of potential in meta search. 
+	Especially in meta searches for a pre-defined area. 
+	Then it is easier to rank the results 
+* Necessity:
+	They are not necessity. 
 
 ### 10. Give examples of application requirements impacting the queuing policy of a crawler.
 Heuristics for assigning priority
-• Refresh rate sampled from previous crawls
-• Application-specific (e.g., “crawl news sites more often”)
+
+* Refresh rate sampled from previous crawls
+* Application-specific (e.g., "crawl news sites more often")
 
 ### 11. Consider the main challenges (in your opinion) of developing a universal SE (given a query, your SE should output relevant docs, multimedia, maps, news, blogs, etc).
 
