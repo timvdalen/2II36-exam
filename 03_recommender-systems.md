@@ -3,26 +3,26 @@
 ### 21. Describe the difference between different types of recommender systems, such as personalized recommenders, collaborative filtering, content-based recommenders, knowledge-based filtering and hybrid approaches.
 
 * Personalized recommenders
-  Only uses the personal data of the user. 
+	<br>Only uses the personal data of the user. 
 * Collaborative filtering
-  Tell me what is popular among my peers. It uses 'friends' data.
+	<br>Tell me what is popular among my peers. It uses 'friends' data.
 * Content-based recommenders
-  Show me more of what I liked. Uses other product of the same kind and looks for a product that looks like the products that you liked the best.
+	<br>Show me more of what I liked. Uses other product of the same kind and looks for a product that looks like the products that you liked the best.
 * Knowledge based approaches
-  Tell me what fits me based on my needs. 
+	<br>Tell me what fits me based on my needs. 
 * Hybrid approaches
-  Combination of previous approaches. 
+	<br>Combination of previous approaches. 
 
 ### 22. Describe the pro's and con's of different kind of recommender systems, such as collaborative filtering, content-based recommenders and knowledge-based filtering.
 * Collaborative filtering
-  * + Learns market segments, no knowledge engineering effort, serendipity of results
-  * - Cold start for new users and new items, requires some rating feedback
+	* [+] Learns market segments, no knowledge engineering effort, serendipity of results
+	* [-] Cold start for new users and new items, requires some rating feedback
 * Content-based recommenders
-  * + No community required, comparision between items possible
-  * - Content description necessary, cold start for new users, no suprises 
+	* [+] No community required, comparision between items possible
+	* [-] Content description necessary, cold start for new users, no suprises 
 * Knowledge based approaches
-  * + No cold start, assured quality, Deterministic recommendations, can resemble sales dialogue 
-  * - Requires knowledge engineering effort, static, does not react to short term trends
+	* [+] No cold start, assured quality, Deterministic recommendations, can resemble sales dialogue 
+	* [-] Requires knowledge engineering effort, static, does not react to short term trends
 
 ### 23. Describe how user-based collaborative filtering works, how it makes predictions and discuss whether it is scalable.
 Find users that look like you and use their rating for that item to make a prediction for that item.
@@ -60,8 +60,8 @@ Neg - Neg - True negative (tn)
 Then we can measure recall: tp/(tp+fn) good movies recommended / all good movies
 We can measure precision: tp/(tp+fp) good movies  recommend / all recommendations
 Accurarcy measures: 
-Mean absolute error: 1/total * Sum |Pi - Ri| for i = 0; i<total.  
-Root mean squar error: root( 1/total * Sum (|Pi - Ri|)^2 for i = 0; i<total.  )
+Mean absolute error: 1/total * Sum |Pi - Ri| for i = 0; i < total.  
+Root mean squar error: root( 1/total * Sum (|Pi - Ri|)^2 for i = 0; i < total.  )
 
 ### 27. Explain the role TF.IDF can play in content-based recommenders.
 A simple approach of a content based recommender is to compute the similarity of an unseen item with the user profile based on keyword overlap.
