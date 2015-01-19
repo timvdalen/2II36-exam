@@ -1,33 +1,28 @@
 ## Recommender Systems
 
 ### 21. Describe the difference between different types of recommender systems, such as personalized recommenders, collaborative filtering, content-based recommenders, knowledge-based filtering and hybrid approaches.
-*Personalized recommenders
-Only uses the personal data of the user. 
 
-*Collaborative filtering
-Tell me what is popular among my peers. It uses 'friends' data.
-
-*Content-based recommenders
-Show me more of what I liked. Uses other product of the same kind and looks for a product that looks like the products that you liked the best.
-
-*Knowledge based approaches
-Tell me what fits me based on my needs. 
-
-*Hybrid approaches
-Combination of previous approaches. 
+* Personalized recommenders
+  Only uses the personal data of the user. 
+* Collaborative filtering
+  Tell me what is popular among my peers. It uses 'friends' data.
+* Content-based recommenders
+  Show me more of what I liked. Uses other product of the same kind and looks for a product that looks like the products that you liked the best.
+* Knowledge based approaches
+  Tell me what fits me based on my needs. 
+* Hybrid approaches
+  Combination of previous approaches. 
 
 ### 22. Describe the pro's and con's of different kind of recommender systems, such as collaborative filtering, content-based recommenders and knowledge-based filtering.
-*collaborative filtering
-+ Learns market segments, no knowledge engineering effort, serendipity of results
-- Cold start for new users and new items, requires some rating feedback
-
-*Content-based recommenders
-+ No community required, comparision between items possible
-- Content description necessary, cold start for new users, no suprises 
-
-*Knowledge based approaches
-+ No cold start, assured quality, Deterministic recommendations, can resemble sales dialogue 
-- Requires knowledge engineering effort, static, does not react to short term trends
+* Collaborative filtering
+  * + Learns market segments, no knowledge engineering effort, serendipity of results
+  * - Cold start for new users and new items, requires some rating feedback
+* Content-based recommenders
+  * + No community required, comparision between items possible
+  * - Content description necessary, cold start for new users, no suprises 
+* Knowledge based approaches
+  * + No cold start, assured quality, Deterministic recommendations, can resemble sales dialogue 
+  * - Requires knowledge engineering effort, static, does not react to short term trends
 
 ### 23. Describe how user-based collaborative filtering works, how it makes predictions and discuss whether it is scalable.
 Find users that look like you and use their rating for that item to make a prediction for that item.
@@ -83,21 +78,22 @@ Standard measure: TF-IDF:
 ### 28. Explain the influence of human decision making when designing recommender systems.
 People use different techniques to make their choice.
 Some of these are: 
+
 * First Satisfying item.
 * Elimination by Aspects: 
-They start with the most important aspect and eliminate all items that are not satisfying. 
-After that they continue with less important aspects till there is one left.
+  They start with the most important aspect and eliminate all items that are not satisfying. 
+  After that they continue with less important aspects till there is one left.
 * Reason-based choice
-They want to make a decision that they can justify.
-There are also different phenomenons that effect their choices.
+  They want to make a decision that they can justify.
+  There are also different phenomenons that effect their choices.
 * Decoy: adding another item to influence the decision. 
 * Primacy/Recency: items at the end and beginning get more attention.
 * Framing: The way in which difference decision alternatives are presented influences the final decision taken. 
 * Priming: If specific decision properties are made more available in the memory, this influences a consumer's item evaluation.
 * Defaults: Preset options bias the decision process.
-Also different users have different personalities. 
-Some look for the solution that fills their basic requirements. 
-Other try to find an optimal solution. 
-Some want to make a decision as quick as possible.
-Some need more guidance and some want to actively search.
-This all have influence in the choice of users. 
+  Also different users have different personalities. 
+  Some look for the solution that fills their basic requirements. 
+  Other try to find an optimal solution. 
+  Some want to make a decision as quick as possible.
+  Some need more guidance and some want to actively search.
+  This all have influence in the choice of users. 
