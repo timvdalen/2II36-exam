@@ -34,4 +34,13 @@ Cascade detection: Given a dynamic process spreading over the network, we want t
 Select a subset of nodes A that maximize the expected reward ![](http://img.ctrlv.in/img/15/01/17/54baa4fd3b797.png) subject to cost(A) < B.
 
 ### 19. Explain a way of measuring the similarity of nodes in homogeneous networks (e.g. SimRank). Consider advantages and disadvantages of the approach, how it can be combined with some other idea(s).
+* SimRank: x and y are similar if they are related to similar objects; basic and bipartite cases.
+* Advantages: Favor “pure” objects (highly skewed distribution in their inlinks or out-links)
+* Disadvantages: Does not distinguish object type and relationship type.
+* Combines: Bipartite SimRank: Bipartite domains consist of two types of objects. Then we can look for similarity People are similar if they purchase similar items. Items are similar if they are purchased by similar people.
+
 ### 20. Explain a way of measuring the similarity of nodes in heterogeneous networks (e.g. PathSim). Consider advantages and disadvantages of the approach, how it can be combined with some other idea(s).
+* PathSim accounts for connectivity of x and y as number of paths between them following meta-path (specified by a user) and for the balance of their visibility; meaning/ interpretation is reflected in a chosen meta-path
+* Advantages: Does distinguish object type and relationship type. Let's user define a meta-path which is very useful.
+* Disadvantages: The user must be able to write correct meta-paths
+* Combines: Can use other similarity measures instead of the meta-paths. 
