@@ -1,11 +1,16 @@
 out = 2ii36-exam
 markdown = pandoc
-markdownopts = -s --toc --template template/template.html
+markdownopts = -s --template template/template.html
+toc = --toc
 
 all: $(out).html
 
 $(out).html:
-	$(markdown) $(markdownopts) *.md > $(out).html
+	$(markdown) $(markdownopts) $(toc) *.md > $(out).html
+
+$(out)-print.html:
+	$(markdown) $(markdownopts) *.md > $(out)-print.html
 
 clean:
 	rm -f $(out).html
+	rm -f $(out)-print.html
